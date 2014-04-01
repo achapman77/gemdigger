@@ -6,8 +6,6 @@ Bloccit::Application.routes.draw do
     resources :posts, except: [:index]
   end
 
-  resources :posts
-
   get 'about' => 'welcome#about'
 
   root to: 'welcome#index'
