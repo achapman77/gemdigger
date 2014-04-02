@@ -1,4 +1,4 @@
-<h1>Topics#new</h1>
+<h1>New Topic</h1>
 
 <div class="row">
   <div class="col-md-4">
@@ -24,6 +24,10 @@
           <%= f.check_box :public %> Public topic
         <% end %>
       </div>
+      <div class="form-group">
+        <label for="post_image">Image</label>
+        <input id="post_image" name="post[image]" type="file">
+        </div>
       <%= f.submit "Save", class: 'btn btn-success' %>
     <% end %>
   </div>
