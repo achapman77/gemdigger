@@ -25,7 +25,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Setup:
+See: config/application.yml.
 
 
 Please feel free to use a different markup language if you do not plan to run
