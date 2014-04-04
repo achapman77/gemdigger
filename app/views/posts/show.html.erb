@@ -8,8 +8,23 @@
         <%= @post.user.name %>
       </small>
       <p><%= markdown @post.body %></p>
-      <%= image_tag(@post.image.url) if @post.image? %>
+      <p><%= image_tag(@post.image.url) if @post.image? %></p>
+
+    <hr/>
+
+      <h2><%= @comments.count %>Comments</h2>
+
+      <%= render @comments %>
+
+      <% if policy(Comment.new).create? %>
+        <%= link_to "New Comment", class: 'btn btn-success' %>
+
+    <hr/>
+      <h4>New Comment</h4>
+      <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
+    <% end %>
   </div>
+
   <div class="col-md-4">
     <% if policy(@post).edit? %>
       <%= link_to "Edit", edit_topic_post_path(@topic,@post), class: 'btn btn-success' %>
