@@ -15,11 +15,10 @@
       <%= render @comments %>
 
       <% if policy(Comment.new).create? %>
-        <%= link_to "New Comment", class: 'btn btn-success' %>
-
+        <%#= link_to "New Comment", class: 'btn btn-success' %>
       <h4>New Comment</h4>
       <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
-    <% end %>
+      <% end %>
   </div>
 
   <div class="col-md-4">
