@@ -27,7 +27,7 @@ end
 
   5.times do
     topic = topics.first
-    post = Post.create(
+    post = topic.posts.create(
       user: user,
       title: Faker::Lorem.sentence,
       body: Faker::Lorem.paragraph)
@@ -39,6 +39,7 @@ end
 end
 
 User.all.each do |user|
+  post_count = Post.count
   4.times do
     post = Post.find(rand(1..post_count))
     comment = user.comments.create(

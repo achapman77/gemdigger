@@ -18,7 +18,6 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    raise
     @topic = Topic.find(params[:topic_id])
     @post = @topic.posts.find(params[:post_id])
 
