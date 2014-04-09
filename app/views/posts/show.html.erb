@@ -2,6 +2,7 @@
 
 <div class="row">
   <div class="col-md-8">
+      <%= render partial: 'votes/voter', locals: { topic: @topic, post: @post } %>
       <small>
         <%= image_tag(@post.user.avatar.tiny.url) if @post.user.avatar? %>
         submitted <%= time_ago_in_words(@post.created_at) %> ago by
@@ -15,9 +16,8 @@
       <%= render @comments %>
 
       <% if policy(Comment.new).create? %>
-        <%#= link_to "New Comment", class: 'btn btn-success' %>
-      <h4>New Comment</h4>
-      <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
+        <h4>New Comment</h4>
+        <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
       <% end %>
   </div>
 
