@@ -10,9 +10,13 @@
       <p><%= markdown @post.body %></p>
       <p><%= image_tag(@post.image.url) if @post.image? %></p>
 
-      <div class="well"><%= @comments.count %> Comments</div>
+        <div class="well" data-toggle="collapse" data-target="#demo" onmouseover="this.style.background='#4A4A4A';" onmouseout="this.style.background='#333';">
+          + <%= @comments.count %> Comments Below
+        </div>
 
-      <%= render partial: 'comments/comment', collection: @comments %>
+        <div id="demo" class="collapse in">
+          <%= render partial: 'comments/comment', collection: @comments %>
+        </div>
 
       <% if policy(Comment.new).create? %>
         <h4>New Comment</h4>
