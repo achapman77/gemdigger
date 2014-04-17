@@ -19,4 +19,12 @@ module ApplicationHelper
   topic = post.topic
   [topic, post, comment]
   end
+
+  def set_tooltip(id, data_title)
+    { "class" => 'btn btn-primary btn-sm',
+      "id" => id,
+      "data-toggle" => "tooltip",
+      "data-placement" => "bottom",
+      "data-original-title" => data_title }
+  end
 end

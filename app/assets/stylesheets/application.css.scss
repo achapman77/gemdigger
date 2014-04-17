@@ -1,5 +1,7 @@
 @import "bootstrap";
 
+$boot-blue: #3276b1;
+
 .user-info {
   margin-top: 9px;
 }
@@ -20,3 +22,10 @@
 .voted {
   opacity: 0.5;
 }
+
+.well {
+  background-color: #333;
+  color: white;
+  padding: 3px;
+  margin: 5px;
+  }

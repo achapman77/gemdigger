@@ -10,7 +10,7 @@
       <p><%= markdown @post.body %></p>
       <p><%= image_tag(@post.image.url) if @post.image? %></p>
 
-      <h4><%= @comments.count %> Comments</h4>
+      <div class="well"><%= @comments.count %> Comments</div>
 
       <%= render partial: 'comments/comment', collection: @comments %>
 
