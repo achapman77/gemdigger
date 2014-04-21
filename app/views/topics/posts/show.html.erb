@@ -11,7 +11,7 @@
       <p><%= image_tag(@post.image.url) if @post.image? %></p>
 
         <div class="well" data-toggle="collapse" data-target="#demo" onmouseover="this.style.background='#4A4A4A';" onmouseout="this.style.background='#333';">
-          + <%= @comments.count %> Comments Below
+          <h4 class='js-comments-count'> + <%= @comments.count %> Comments Below</h4>
         </div>
 
         <div id="demo" class="collapse in">
