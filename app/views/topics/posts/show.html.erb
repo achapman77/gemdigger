@@ -15,7 +15,9 @@
         </div>
 
         <div id="demo" class="collapse in">
-          <%= render partial: 'comments/comment', collection: @comments %>
+          <div class='js-comments'>
+            <%= render partial: 'comments/comment', collection: @comments %>
+          </div>
         </div>
 
       <% if policy(Comment.new).create? %>
