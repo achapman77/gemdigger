@@ -2,4 +2,3 @@
 
 ## Bloccit: a Reddit clone.
 
-## gemdigger
