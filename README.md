@@ -1,6 +1,6 @@
 == README
 
-## GemDigger: Bloc's code review team site.
+## [GemDigger: Bloc's code review team site.](http://gemdigger.herokuapp.com/)
 
 Each week we will be digging deep into a popular open-source library.
 The main goal is to unpack and review well-polished, clean code.
@@ -10,14 +10,13 @@ Ancillary goals may include reviewing code and attempting to make improvements t
 
 ## Resources
 
-Eric Ti Yu Chiang's excellent blog: http://serixscorpio.github.io/
+[Eric Ti Yu Chiang's excellent blog](http://serixscorpio.github.io/)
 
-Reading Good Code:
-https://www.youtube.com/watch?v=mW_xKGUKLpk
+[Reading Good Code](https://www.youtube.com/watch?v=mW_xKGUKLpk)
 
-http://www.codetriage.com/
+[Code Triage](http://www.codetriage.com/)
 
-https://github.com/trending
+[Trending Github Open Source](https://github.com/trending)
 
 
 
